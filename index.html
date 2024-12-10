@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- icon logo -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Google Fonts : Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Style CSS -->
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 flex w-full justify-center shadow-lg z-10">
+        <div class="container flex w-full justify-between relative items-center md:px-0">
+          <div class="px-4 h-20 w-20 inline-block cursor-pointer">
+            <a href="#home" class="text-white font-bold text-2xl block py-6"
+              >Aurell<span class="text-primary">.</span></a
+            >
+          </div>
+          <!-- hamburger -->
+          <div class="flex items-center px-4">
+            <button
+              type="button"
+              id="hamburger"
+              name="hamburger"
+              class="block absolute right-4 md:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-500 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-500 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-500 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <!-- Navbar -->
+            <div
+              class="hidden absolute py-5 text-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full md:block md:static md:bg-transparant md:max-w-full md:shadow-none md:rounded-none z-[9999]"
+              id="navbar-menu"
+            >
+              <ul class="md:flex gap-4">
+                <li class="group">
+                  <a class="navMenu" href="#home">Home</a>
+                </li>
+                <li class="group">
+                  <a class="navMenu" href="#about">About</a>
+                </li>
+                <li class="group">
+                  <a class="navMenu" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="group">
+                  <a class="navMenu" href="#services">Services</a>
+                </li>
+                <li class="group">
+                  <a
+                    class="font-medium text-white py-2 px-5 mx-8 flex hover:underline md:border-2 md:border-primary md:hover:bg-primary"
+                    href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex w-full justify-center mt-12 px-8 md:h-screen text-white">
+        <div class="container px-8 flex flex-col-reverse gap-8 justify-between items-center md:px-0 md:flex-row">
+            <div class="w-full flex flex-col gap-6">
+                <h4 class="text-2xl font-bold text-primary md:leading-[94px] md:text-[38px]">Hello, I'm Aurell</h4>  
+                <h1  class="text-6xl font-bold md:text-[80px] md:leading-[25px]"><span id="typed"></span></h1>
+                <p class="text-gray font-normal text-base w-full mt-4">I am an active student at <a href="#"> <span class="underline font-semibold hover:text-primary">Amikom University Yogyakarta</span></a>, majoring in Informatics, who has a deep passion and interest in Technology and design. I am passionate to contribute in producing innovative and high quality solutions. I am looking for opportunities to continue to grow and collaborate with experienced professionals in the industry.</p></h4>
+                <div class="mt-4">
+                    <div class="mt-2 flex items-center gap-3">
+                        <a href="#" class="btn border-2 border-primary bg-primary py-3 px-6 text-lg font-medium mr-4">Email Me</a>
+                        <a href="#" class="btn border-2 border-primary py-3 px-6 text-lg font-medium mr-4 text-white flex items-center">
+                          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                          </svg>                          
+                          <span class="ml-2">Download CV</span>
+                      </a>
+                      
+                    </div>
+                </div>                                                          
+            </div>
+
+            <div class="w-full overflow-hidden">
+              <div class="relative mt-10">
+                <img src="./img/photo3d.png" alt="photo" class="max-w-full mx-auto">
+                <span class="absolute bottom-32 left-1/3 -translate-x-1/2 -z-10">
+                    <img src="./img/blob.svg" alt="blob" class="w-full">
+                </span>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- About -->
+      <section class="flex w-full justify-center mt-12 px-8 md:h-screen text-white" id="about">
+        <div class="container px-8 flex flex-col-reverse gap-8 justify-between items-center md:px-0 md:flex-row">
+          <div class="w-full flex flex-col gap-6 ">
+              <h1 class="text-xl leading-tight font-bold">About Me<span class="text-primary">.</span></h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis nihil rem eaque culpa, facilis fugiat quisquam iure minus minima odio iste amet illo omnis voluptatum consequatur nulla sint ut! Ipsum!</p>
+            <div class="flex items-center">
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full bg-light-dark flex justify-center items-center hover:bg-deep-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>              
+              </a>
+
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full bg-light-dark flex justify-center items-center hover:bg-deep-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>            
+                
+              </a>
+
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full bg-light-dark flex justify-center items-center hover:bg-deep-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59" />
+                </svg>
+                
+              </a>
+
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full bg-light-dark flex justify-center items-center hover:bg-deep-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                </svg>
+                
+              </a>
+
+              <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full bg-light-dark flex justify-center items-center hover:bg-deep-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                </svg>
+                
+              </a>
+            </div>
+          </div>
+          
+          <div class="w-full">
+            <h2 class="font-semibold leading-tight text-lg text-primary my-2">Education</h2>
+            <p>University AMIKOM Yogyakarta <span class="text-primary">-</span> Informatics <span class="mx-4 text-primary">2023 - Now</span> </p>
+            <p>SMKN 2 Magelang <span class="text-primary">-</span> Software Engineering <span class="mx-4 text-primary">2020 - 2023</span> </p>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="pt-36 pb-16 bg-light-gray flex w-full justify-center mt-12 px-8">
+        <div class="container">
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+              <h4 class="font-semibold text-2xl text-primary mb-2">Portfolio<span class="text-dark">.</span></h4>
+              <h2 class="text-dark text-3xl font-bold mb-4">New Project</h2>
+              <p class="font-medium text-md text-gray">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias, commodi nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?
+              </p>
+            </div>
+          </div>
+            
+          <div class="w-full px-4 flex flex-wrap justify-center">
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <img src="./img/dummy.jpeg" alt="Landing Page" class="w-full" />
+              </div>
+              <h3 class="port-h3">App Pengaduan Masyarakat Online</h3>
+              <p class="font-medium text-base text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
+            </div>
+          
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <img src="./img/dummy.jpeg" alt="Landing Page" class="w-full" />
+              </div>
+              <h3 class="port-h3">App Pengaduan Masyarakat Online</h3>
+              <p class="font-medium text-base text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
+            </div>
+          
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <img src="./img/dummy.jpeg" alt="Landing Page" class="w-full" />
+              </div>
+              <h3 class="port-h3">App Pengaduan Masyarakat Online</h3>
+              <p class="font-medium text-base text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
+            </div>
+         
+            <div class="mb-12 p-4 md:w-1/2">
+              <div class="rounded-md shadow-md overflow-hidden">
+                <img src="./img/dummy.jpeg" alt="Landing Page" class="w-full" />
+              </div>
+              <h3 class="port-h3">App Pengaduan Masyarakat Online</h3>
+              <p class="font-medium text-base text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, iusto! Aliquam, corporis.</p>
+            </div>
+          </div>
+        </div>
+      </section>      
+
+      <!-- services -->
+      <section class="flex w-full justify-center my-12 px-8 md:h-screen text-white" id="services">
+        <div class="container px-8 flex flex-col-reverse gap-8 justify-between items-center md:px-0 md:flex-row">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="block md:flex items-start justify-between">
+              <h2 class="text-white text-3xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">Experience Working</h2>
+              <div class="mt-6 md:mt-8 w-full md:w-1/2 lg:w-2/5">
+                <div class="flex items-center">
+                  <hr class="w-14 border-t-2 border-primary mr-4">
+                  <h6 class="text-primary font-bold text-xl mr-4">Services</h6>
+                </div>
+                <p class="mt-2 text-gray-500">Discover the best services I offer, designed to ensure the success of your project.</p>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20 md:flex-wrap">
+              <div class="bg-light-dark shadow-md rounded-none px-6 py-16" style="position: relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                </svg>            
+                <h5 class="text-white text-xl font-bold mb-2 mt-6">Web Development</h5>
+                <p class="text-gray text-base mb-4 leading-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore numquam soluta suscipit laborum. Pariatur, ratione!</p>        
+              </div>
+              
+              <div class="bg-light-dark shadow-md rounded-none px-6 py-16" style="position: relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                </svg>                       
+                <h5 class="text-white text-xl font-bold mb-2 mt-6">Front-end Development</h5>
+                <p class="text-gray text-base mb-4 leading-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore numquam soluta suscipit laborum. Pariatur, ratione!</p>        
+              </div>
+              
+              <div class="bg-light-dark shadow-md rounded-none px-6 py-16" style="position: relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5" />
+                </svg>                      
+                <h5 class="text-white text-xl font-bold mb-2 mt-6">UI/UX</h5>
+                <p class="text-gray text-base mb-4 leading-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore numquam soluta suscipit laborum. Pariatur, ratione!</p>        
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+      <!-- contact -->
+      <section class="contact py-10 bg-deep-gray" id="contact">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="block md:flex items-center justify-between">
+            <div>
+              <h4 class="text-white text-3xl lg:text-[38px] font-bold mb-2">Have any project in mind?</h4>
+              <p class="text-gray mt-4">Feel free to contact me or just say friendly hello!</p>
+            </div>
+            <div class="mt-8 md:mt-0">
+              <a href="#" class="bg-primary text-white rounded-none py-3 px-6 text-lg font-medium">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="pt-8 pb-6 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="md:flex justify-between items-start">
+            <div>
+              <span id="home" class="text-dark text-xl font-bold">Aurell<span class="text-primary">.</span></span>
+              <p class="mb-4 w-72">Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eius.</p>
+            </div>
+            <div class="w-full links mt-10 md:mt-0 space-y-5 md:w-96 justify-between md:space-y-0 md:flex">
+              <div class="info">
+                <h6 class="text-xl text-dark font-semibold mb-6">Information</h6>
+                <ul class="text-gray space-y-3">
+                  <li class="hover:underline"><a href="tel:+62895363402666">+62895363402666</a></li>
+                  <li class="hover:underline"><a href="mailto:orelldsgn@gmail.com">orelldsgn@gmail.com</a></li>
+                  <li class="hover:underline">Central Java, Indonesia</li>
+                </ul>
+              </div>
+              <div class="social">
+                <h6 class="text-xl text-dark font-semibold mb-5">Social Media</h6>
+                <ul class="text-gray space-y-3">
+                  <li class="hover:underline"><a href="#">Dribbble</a></li>
+                  <li class="hover:underline"><a href="#">Behance</a></li>
+                  <li class="hover:underline"><a href="https://www.linkedin.com/in/aurell-rell">Linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+    
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </body>
+</html>
