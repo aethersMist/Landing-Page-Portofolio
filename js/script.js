@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize Typed.js
   var typed = new Typed("#typed", {
-    strings: ["Front-end", "Web Dev", "UI/UX"],
-    typeSpeed: 50,
+    strings: ["Front-end", "Web Dev", "Designer", "UI/UX"],
+    typeSpeed: 130,
     backSpeed: 30,
     loop: true,
   });
